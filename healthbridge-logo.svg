@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" className="w-full h-full">
+  <defs>
+    <!-- Left Heart Blue Gradient -->
+    <linearGradient id="hb-blue-heart" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#00c0ff" />
+      <stop offset="40%" stop-color="#0084ff" />
+      <stop offset="100%" stop-color="#0052d4" />
+    </linearGradient>
+
+    <!-- Right Heart Green Gradient -->
+    <linearGradient id="hb-green-heart" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#76e01a" />
+      <stop offset="45%" stop-color="#2ecc40" />
+      <stop offset="100%" stop-color="#00a843" />
+    </linearGradient>
+
+    <!-- Left Person Blue Gradient -->
+    <linearGradient id="hb-person-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c6ff" />
+      <stop offset="100%" stop-color="#0072ff" />
+    </linearGradient>
+
+    <!-- Right Person Green Gradient -->
+    <linearGradient id="hb-person-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#72f337" />
+      <stop offset="100%" stop-color="#16a34a" />
+    </linearGradient>
+
+    <!-- Bridge & Stethoscope Blue Gradient -->
+    <linearGradient id="hb-steth-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0099ff" />
+      <stop offset="50%" stop-color="#0066d6" />
+      <stop offset="100%" stop-color="#0044aa" />
+    </linearGradient>
+
+    <!-- Stethoscope Diaphragm Center Gradient -->
+    <radialGradient id="hb-diaphragm-glow" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#60d5ff" />
+      <stop offset="55%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#034b8c" />
+    </radialGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="hb-shadow" x="-10%" y="-10%" width="120%" height="120%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <g filter="url(#hb-shadow)">
+    <!-- LEFT HEART WING (BLUE) -->
+    <path
+      d="M256 128 C232 72 178 32 118 32 C52 32 16 84 16 156 C16 260 120 336 244 424 C236 400 200 348 160 300 C110 240 76 195 76 152 C76 112 100 82 136 82 C172 82 208 108 226 142 Z"
+      fill="url(#hb-blue-heart)"
+    />
+
+    <!-- RIGHT HEART WING (GREEN) -->
+    <path
+      d="M256 128 C280 72 334 32 394 32 C460 32 496 84 496 156 C496 260 392 336 268 424 C276 400 312 348 352 300 C402 240 436 195 436 152 C436 112 412 82 376 82 C340 82 304 108 286 142 Z"
+      fill="url(#hb-green-heart)"
+    />
+
+    <!-- LEFT PERSON (BLUE) -->
+    <!-- Head -->
+    <circle cx="180" cy="155" r="32" fill="url(#hb-person-blue)" />
+    <!-- Body/Shoulders -->
+    <path
+      d="M136 260 C136 210 152 195 180 195 C208 195 224 210 224 260 Z"
+      fill="url(#hb-person-blue)"
+    />
+
+    <!-- RIGHT PERSON (GREEN) -->
+    <!-- Head -->
+    <circle cx="332" cy="155" r="32" fill="url(#hb-person-green)" />
+    <!-- Body/Shoulders -->
+    <path
+      d="M288 260 C288 210 304 195 332 195 C360 195 376 210 376 260 Z"
+      fill="url(#hb-person-green)"
+    />
+
+    <!-- BRIDGE STRUCTURE -->
+    <!-- Top Arch -->
+    <path
+      d="M130 292 C180 236 332 236 382 292 L364 306 C324 258 188 258 148 306 Z"
+      fill="url(#hb-steth-blue)"
+    />
+    <!-- Bottom Arch Deck -->
+    <path
+      d="M142 316 C186 280 326 280 370 316 L356 332 C320 300 192 300 156 332 Z"
+      fill="url(#hb-steth-blue)"
+    />
+    <!-- Bridge Vertical Pillars -->
+    <rect x="180" y="260" width="10" height="42" rx="4" fill="url(#hb-steth-blue)" />
+    <rect x="220" y="248" width="10" height="50" rx="4" fill="url(#hb-steth-blue)" />
+    <rect x="251" y="244" width="10" height="52" rx="4" fill="url(#hb-steth-blue)" />
+    <rect x="282" y="248" width="10" height="50" rx="4" fill="url(#hb-steth-blue)" />
+    <rect x="322" y="260" width="10" height="42" rx="4" fill="url(#hb-steth-blue)" />
+
+    <!-- STETHOSCOPE TUBING & CHESTPIECE -->
+    <!-- Earpieces/Upper Binaural Curve under Bridge -->
+    <!-- Left Earpiece Bulb -->
+    <circle cx="198" cy="344" r="14" fill="url(#hb-steth-blue)" />
+    <!-- Right Earpiece Bulb -->
+    <circle cx="314" cy="344" r="14" fill="url(#hb-steth-blue)" />
+    <!-- Binaural U-Tube Base -->
+    <path
+      d="M198 344 C198 420 314 420 314 344"
+      stroke="url(#hb-steth-blue)"
+      stroke-width="16"
+      stroke-linecap="round"
+      fill="none"
+    />
+
+    <!-- Lower Flexible Tube leading to Stethoscope Diaphragm -->
+    <path
+      d="M256 414 C256 465 285 500 340 488 C385 478 395 435 395 410"
+      stroke="url(#hb-steth-blue)"
+      stroke-width="15"
+      stroke-linecap="round"
+      fill="none"
+    />
+
+    <!-- Stethoscope Diaphragm / Chest Piece -->
+    <!-- Outer Rim -->
+    <circle cx="395" cy="405" r="38" fill="#ffffff" />
+    <circle cx="395" cy="405" r="35" fill="url(#hb-steth-blue)" />
+    <circle cx="395" cy="405" r="26" fill="#ffffff" />
+    <!-- Inner Lens / Core -->
+    <circle cx="395" cy="405" r="22" fill="url(#hb-diaphragm-glow)" />
+    <!-- Specular Highlight on Diaphragm -->
+    <ellipse cx="388" cy="397" rx="7" ry="4" fill="#ffffff" opacity="0.6" transform="rotate(-30 388 397)" />
+  </g>
+</svg>

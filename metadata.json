@@ -1,0 +1,12 @@
+{
+  "name": "Remix Remix HealthBridge",
+  "description": "Unified healthcare access platform connecting patients, verified doctors, hospitals, Jan Aushadhi pharmacies, emergency services, and government healthcare schemes with AI triage.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
